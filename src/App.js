@@ -1,13 +1,15 @@
 import React , {useState} from 'react';
+import UseStateArray from './components/UseStateArray';
 
 
 const App = () => {
 // In useState first value is current value and we store it into variable name myNAME and then other value it take is function and then we define it setMyname when this one function and here we give new value because we define this one function on inside the fucntion that call when we clicked on the button 
- const[myNAME, setMyname ] = useState("INSHA YAQOOB")
-  const changestatement = () =>{
-    setMyname("BY click on it changed to INSHA")
+//  const[myNAME, setMyname ] = useState("INSHA YAQOOB")
+//   const changestatement = () =>{
+//     setMyname("BY click on it changed to INSHA")
+    
 
-  }
+//   }
   const containerStyle = {
     display: "flex",
     flexDirection: "column",
@@ -17,25 +19,26 @@ const App = () => {
     backgroundColor: "gray"
   };
 
-  const headingStyle = {
-    margin: 0,
-    textAlign: "center"
-  };
+//   const headingStyle = {
+//     margin: 0,
+//     textAlign: "center"
+//   };
 
-  const buttonStyle = {
-    backgroundColor: "#007BFF",
-    color: "white",
-    padding: "10px 20px",
-    border: "none",
-    borderRadius: "5px",
-    marginTop: "10px",
-    cursor: "pointer"
-  };
+//   const buttonStyle = {
+//     backgroundColor: "#007BFF",
+//     color: "white",
+//     padding: "10px 20px",
+//     border: "none",
+//     borderRadius: "5px",
+//     marginTop: "10px",
+//     cursor: "pointer"
+//   };
 
   return (
     <div style={containerStyle}>
-      <h1 style={headingStyle}>{myNAME}</h1>
-      <button style={buttonStyle} onClick={changestatement}>Click me plz</button>
+    {/* //   <h1 style={headingStyle}>{myNAME}</h1>
+    //   <button style={buttonStyle} onClick={changestatement}>Click me plz</button> */}
+      <UseStateArray />
     </div>
   );
 }
