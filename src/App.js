@@ -1,7 +1,8 @@
 import React , {useState} from 'react';
 // import UseStateArray from './components/UseStateArray';
 // import UseStataobject from './components/UseStataobject';
-import TudoList from './components/TudoList';
+// import TudoList from './components/TudoList';
+import BasicForm from './components/BasicForm';
 
 const App = () => {
 // In useState first value is current value and we store it into variable name myNAME and then other value it take is function and then we define it setMyname when this one function and here we give new value because we define this one function on inside the fucntion that call when we clicked on the button 
@@ -41,7 +42,8 @@ const App = () => {
     //   <button style={buttonStyle} onClick={changestatement}>Click me plz</button> */}
       {/* <UseStateArray /> */}
        {/* <UseStataobject /> */}
-       <TudoList />
+       {/* <TudoList /> */}
+       <BasicForm/>
     </div>
   );
 }

@@ -1,0 +1,45 @@
+/* body {
+    background-color: gray;
+  } */
+  
+  form {
+    background-color: #686888;
+    padding: 43px;
+    border: 1px solid black;
+    min-width: 221px;
+    min-height: 200px
+  }
+  
+  input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    margin-bottom: 22px;
+    margin-left: -11px;
+    margin-top: 10px;
+
+  }
+  .inputss{
+    width: 3570%;
+    padding: 0px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    margin-bottom: 22px;
+    margin-left: -187px;
+    margin-top: 10px;
+}
+  
+  button {
+    background-color: blue;
+    color: white;
+    width: 32%;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+  }
+  label{
+    margin-bottom: 2px;
+  }
