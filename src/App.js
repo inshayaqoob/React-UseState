@@ -3,6 +3,7 @@ import React , {useState} from 'react';
 // import UseStataobject from './components/UseStataobject';
 // import TudoList from './components/TudoList';
 import BasicForm from './components/BasicForm';
+import UseEffects from './components/useEffect.js/UseEffects';
 
 const App = () => {
 // In useState first value is current value and we store it into variable name myNAME and then other value it take is function and then we define it setMyname when this one function and here we give new value because we define this one function on inside the fucntion that call when we clicked on the button 
@@ -43,7 +44,8 @@ const App = () => {
       {/* <UseStateArray /> */}
        {/* <UseStataobject /> */}
        {/* <TudoList /> */}
-       <BasicForm/>
+       {/* <BasicForm/> */}
+       <UseEffects/>
     </div>
   );
 }

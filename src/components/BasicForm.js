@@ -11,9 +11,16 @@ const BasicForm = () => {
   }
   const[Allentry, setnewentry] = useState([]);
   const Submitted = (e) =>{
-    e.preventDefault();
-    const newEntry = {email : email, password : password};
-    setnewentry([...Allentry, newEntry])
+    if(email && password){
+      e.preventDefault();
+      const newEntry = {email : email, password : password};
+      setnewentry([...Allentry, newEntry])
+      setpassword("");
+      setemail("");
+    }else{
+      alert("Please enter the data")
+    }
+   
 
   }
 
