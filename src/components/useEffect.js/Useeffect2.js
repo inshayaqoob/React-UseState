@@ -1,5 +1,6 @@
 import React , {useState, useEffect} from 'react'
 
+
 const Useeffect2 = () => {
     const[width, setwidth] = useState(window.screen.width);
     const resize =  () => {

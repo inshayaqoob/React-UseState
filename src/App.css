@@ -1,4 +1,4 @@
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,53 @@
 
 .btn:hover {
   background-color: #0056b3;
+} */
+/* Add this CSS to your component's stylesheet */
+.images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.stats {
+  margin-top: 10px;
+}
+
+.stats .d-flex {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number1,
+.number2,
+.number3 {
+  font-weight: bold;
+}
+
+.row.text-center {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  flex-basis: calc(33.33% - 30px); /* Adjust this to change the spacing between boxes */
+  margin-bottom: 20px;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex-basis: calc(50% - 20px); /* Display two boxes per row on small screens */
+  }
 }
