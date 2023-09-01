@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import './UseEffectApi.css'; // Import the CSS file for styling
+import { Loading } from './Github/Loading';
 
 const UseEffectApi = () => {
   const [users, setUsers] = useState([]);
+  const[loading, setloading] = useState(true)
 
   const getusers = async () => {
     try {
+      setloading(false)
       const response = await fetch('https://api.github.com/users');
       if (!response.ok) {
         throw new Error('Failed to fetch data');
@@ -16,10 +19,15 @@ const UseEffectApi = () => {
       console.error('Error fetching data:', error);
     }
   };
-
+ 
   useEffect(() => {
     getusers();
   }, []);
+  if  (loading) {
+    return  <>
+    <Loading />
+    </>
+  }
 
   return (
     <div className='container'>
