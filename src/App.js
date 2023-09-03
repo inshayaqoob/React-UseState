@@ -6,6 +6,7 @@ import BasicForm from './components/BasicForm';
 import UseEffects from './components/useEffect.js/UseEffects';
 import Useeffect2 from './components/useEffect.js/Useeffect2';
 import UseEffectApi from './components/useEffect.js/UseEffectApi';
+import Uncontrolled from './components/Forms/Uncontrolled';
 
 const App = () => {
 // In useState first value is current value and we store it into variable name myNAME and then other value it take is function and then we define it setMyname when this one function and here we give new value because we define this one function on inside the fucntion that call when we clicked on the button 
@@ -49,7 +50,8 @@ const App = () => {
        {/* <BasicForm/> */}
        {/* <UseEffects/> */}
        {/* <Useeffect2/> */}
-       <UseEffectApi/>
+       {/* <UseEffectApi/> */}
+       <Uncontrolled/>
     </div>
   );
 }
