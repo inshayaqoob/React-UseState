@@ -1,12 +1,14 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 const Uncontrolled = () => {
+  const[show, setshow] = useState(false)
   const luckynumber = useRef(null);
 
   const formsubmitted = (e) => {
     e.preventDefault();
     // You can access the value of luckynumber using luckynumber.current.value
-    console.log('Submitted value:', luckynumber.current.value);
+    const name =  luckynumber.current.value
+    name === "" ? alert("Please enter name here ") : setshow(true);
   };
 
   const containerStyle = {
@@ -51,12 +53,14 @@ const Uncontrolled = () => {
       <form style={formStyle} onSubmit={formsubmitted}>
         <div>
           <label htmlFor='luckynumber' style={labelStyle}>
-            Enter your lucky number
+            Enter your luckyName
           </label>
           <input type='text' id='luckynumber' ref={luckynumber} style={inputStyle} />
         </div>
         <button style={buttonStyle}>Submit</button>
       </form>
+      <p> {show ?  `You luckyName is ${luckynumber.current.value}`: ""}
+      </p>
     </div>
   );
 };
